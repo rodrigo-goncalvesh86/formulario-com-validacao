@@ -1,0 +1,94 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.principal{
+    width: 800px;
+    height: 402px;
+    background: url("../src/imagens/bg-repeat.jpg");
+    display: flex;
+    align-items: center;
+}
+.principal .pergunta{
+    width: 50%;
+    padding: 145px 50px;
+}
+.principal .pergunta .titulo{
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.principal .pergunta .texto{
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: lowercase;
+    color: #FFFFFF;
+}
+
+.principal .formulario{
+    width: 340px;
+    height: 378px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.principal .formulario .dados-usuario{
+    padding-bottom: 15px;
+    position: relative;
+}
+.principal .formulario .dados-usuario:first-child{
+    margin-top: 20px;
+}
+.principal .formulario .dados-usuario input{
+    width: 300px;
+    height: 35px;
+    border: solid 1px #000000;
+    display: block;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+.principal .formulario .dados-usuario input::placeholder{
+    font-weight: 700;
+    font-size: 15px;
+    color: #A8A8A8;
+}
+.principal .formulario .dados-usuario .campo-obrigatorio{
+    position: absolute;
+    font-weight: 400;
+    font-size: 8px;
+    color: #F52E2E;
+    display: none;
+}
+.principal .formulario .dados-usuario:nth-child(4){
+    padding-bottom: 45px;
+}
+.principal .formulario .dados-usuario:nth-child(4) input{
+    height: 100px;
+}
+.principal .formulario .aviso-campo-obrigatorio{
+    position: absolute; 
+    top: 288px;
+    font-weight: 400;
+    color: #000000;
+    position: absolute;
+    left: 15px;
+    
+}
+.principal .formulario .btn-enviar{
+    color: white;
+    width: 300px;
+    height: 40px;
+    font-weight: 700;
+    font-size: 15px;
+    background-color: #3CCC87;
+    border: none;
+}
+
+.principal .formulario .btn-enviar:hover{
+    background-color: #6ad2a0;
+}
